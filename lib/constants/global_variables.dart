@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-String uri = 'http://192.168.226.232:3000';
+String uri = 'https://server-amazon-clone.onrender.com';
 
 class GlobalVariables {
   // COLORS
