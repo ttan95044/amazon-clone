@@ -1,8 +1,8 @@
 import 'package:amazon/common/widgets/loader.dart';
 import 'package:amazon/features/admin/models/sales.dart';
 import 'package:amazon/features/admin/services/admin_services.dart';
-import 'package:amazon/features/admin/widgets/category_products_chart.dart';
-import 'package:charts_flutter/flutter.dart' as charts;
+// import 'package:amazon/features/admin/widgets/category_products_chart.dart';
+// import 'package:flutter_charts/flutter_charts.dart' as charts;
 import 'package:flutter/material.dart';
 
 class AnalyticScreen extends StatefulWidget {
@@ -43,19 +43,19 @@ class _AnalyticScreenState extends State<AnalyticScreen> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(
-                height: 250,
-                child: CategoryProductsChart(
-                  seriesList: [
-                    charts.Series(
-                      id: 'Sales',
-                      data: earnings!,
-                      domainFn: (Sales sales, _) => sales.label,
-                      measureFn: (Sales sales, _) => sales.earning,
-                    ),
-                  ],
-                ),
-              )
+              // SizedBox(
+              //   height: 250,
+              //   child: CategoryProductsChart(
+              //     seriesList: [
+              //       charts.Series(
+              //         id: 'Sales',
+              //         data: earnings!,
+              //         domainFn: (Sales sales, _) => sales.label,
+              //         measureFn: (Sales sales, _) => sales.earning,
+              //       )
+              //     ],
+              //   ),
+              // )
             ],
           );
   }
